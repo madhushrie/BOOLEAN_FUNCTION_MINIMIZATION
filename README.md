@@ -1,4 +1,3 @@
-# BOOLEAN_FUNCTION_MINIMIZATION
 
 **AIM:**
 
@@ -38,25 +37,49 @@ Hardware – PCs, Cyclone II , USB flasher
 Developed by: Madhu shrie J
 
 RegisterNumber: 212224100034
+ module exp_2(A,B,C,D,F1);
+ 
+ input A,B,C,D;
+ 
+ output F1;
+ 
+ wire x1,x2,x3,x4,x5;
+ 
+ assign x1=(~A)&(~B)&(~C)&(~D);
+ 
+ assign x2=(A)&(~C)&(~D);
+ 
+ assign x3=(~B)&(C)&(~D);
+ 
+ assign x4=(~A)&(B)&(C)&(D);
+ 
+ assign x5=(B)&(~C)&(D);
+ 
+ assign F1=x1|x2|x3|x4|x5;
+ 
+ endmodule
 
-*/
-![Screenshot 2025-04-23 222017](https://github.com/user-attachments/assets/061a93db-0abe-4a03-8c37-3e9f89cdda37)
 
 
 
 **RTL realization**
 
-![screenshot(2)](https://github.com/user-attachments/assets/bcc32146-f69f-4104-9f5f-5cd4829694be)
+![Screenshot (84)](https://github.com/user-attachments/assets/4f00b3d5-feac-4a63-a1af-66f873a2e47b)
+
 
 **Output:**
 
-![Screenshot 2025-04-23 222112](https://github.com/user-attachments/assets/41fc091b-6527-44f6-bee5-78b8748161c5)
+
+![Screenshot 2025-04-24 124219](https://github.com/user-attachments/assets/0c245dab-2bdc-430c-bc75-2806b2c9a0c2)
+
 
 **RTL**
 
 **Timing Diagram**
+![Screenshot (85)](https://github.com/user-attachments/assets/20a4fac0-d0c1-4553-89e9-7efa6077621e)
 
-![screenshot(3)](https://github.com/user-attachments/assets/92562b34-c26f-4659-80a9-e876320b5b76)
+
+
 
 **Result:**
 
