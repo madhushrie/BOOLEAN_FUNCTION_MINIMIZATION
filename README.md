@@ -37,6 +37,7 @@ Hardware – PCs, Cyclone II , USB flasher
 Developed by: Madhu shrie J
 
 RegisterNumber: 212224100034
+```
  module exp_2(A,B,C,D,F1);
  
  input A,B,C,D;
@@ -59,7 +60,7 @@ RegisterNumber: 212224100034
  
  endmodule
 
-
+```
 
 
 **RTL realization**
